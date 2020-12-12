@@ -13,7 +13,7 @@ for i in range(n):
     for j in range(i * 100):
         f.write(str(randint(-1000000, 1000000)) + " ")
     f.close()
-    r = run(["ShellSort.exe"], stdout=PIPE)
+    r = run(["IntroSort.exe"], stdout=PIPE)
     f = open("output" + str(i) + ".txt", "r")
     times[i * 1000] = float(f.readline()[:-1])
     f.close()
